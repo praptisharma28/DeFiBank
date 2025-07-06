@@ -1,8 +1,8 @@
 import Debug "mo:base/Debug";
 
 actor DefiBank{
-    var currentValue = 300;
-    currentValue := 100; //would change
+    stable var currentValue = 300;
+    // currentValue := 100; //would change
 
     let id = 8485878847; //won't change
 
@@ -21,5 +21,10 @@ actor DefiBank{
         Debug.print(debug_show(currentValue));
     }else{
         Debug.print("Amount too large, currentValue less than zero")
+    }
+    };
+
+    public query func checkBalance(): async Nat{
+        return currentValue;
     }
 }
