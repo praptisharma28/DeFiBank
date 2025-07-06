@@ -22,4 +22,5 @@ actor DefiBank{
     }else{
         Debug.print("Amount too large, currentValue less than zero")
     }
+    }
 }
