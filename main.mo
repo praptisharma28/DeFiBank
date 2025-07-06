@@ -4,9 +4,11 @@ import Float "mo:base/Float";
 
 actor DefiBank{
     stable var currentValue: Float = 300;
-    // currentValue := 100; //would change
+    currentValue := 300; //would change
+    Debug.print(debug_show(currentValue));
 
     stable var startTime = Time.now()
+    startTime := Time.now();
     Debug.print(debug_show(startTime));
 
     let id = 8485878847; //won't change
@@ -19,7 +21,7 @@ actor DefiBank{
     };
     //topUp();
 
-    public func withdrawl(amount: Float){
+    public func withdraw(amount: Float){
         let tempValue: Float = currentValue - amount;
         if (tempValue - amount >= 0){
         currentValue -= amount;
