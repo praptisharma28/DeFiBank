@@ -1,2 +1,2 @@
 # DeFiBank
-DeFiBank is a DeFi app built on ICP, offering secure, fast, and fully decentralized banking services using smart contracts.
+DeFiBank is a decentralized finance app built on DFINITY’s Internet Computer (ICP) using Motoko, offering secure and scalable smart contract-based banking services.
